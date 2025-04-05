@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({
       id,
-      shortUrl: `${request.nextUrl.origin}/${id}`,
+      shortUrl: `links.subtrant.icu/${id}`,
     });
   } catch (error) {
     console.error("Error shortening URL:", error);
