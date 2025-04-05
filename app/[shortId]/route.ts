@@ -4,10 +4,7 @@ import { initializeDatabase } from "@/lib/db";
 
 let initialized = false;
 
-export async function GET(
-  request: NextRequest,
-  { params }: { params: { shortId: string } }
-) {
+export async function GET(request: NextRequest, { params }: any) {
   try {
     if (!initialized) {
       await initializeDatabase();
